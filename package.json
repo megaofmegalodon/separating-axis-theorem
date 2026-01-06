@@ -1,0 +1,16 @@
+{
+    "name": "separating-axis-theorem",
+    "version": "1.0.0",
+    "description": "simple demo of the sat algo for collisions",
+    "license": "MIT",
+    "author": "megaofmegalodon",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "watch": "node build.mjs"
+    },
+    "dependencies": {
+        "esbuild": "^0.27.2"
+    },
+    "devDependencies": {}
+}
