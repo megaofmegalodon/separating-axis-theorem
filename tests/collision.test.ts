@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { Polygon, Circle, checkCollision, Vertex } from "../src/index";
 
-describe("SAT Collision Engine", () => {
+describe("collision detection works", () => {
 
     it("should detect circle-circle collision", () => {
         const c1 = new Circle(new Vertex(0, 0), 5);
