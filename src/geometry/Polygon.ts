@@ -15,7 +15,7 @@ export default class Polygon {
         return this;
     }
 
-    get worldVertices(): Vertex[] {
+    get worldVertices() {
         return this.vertices.map(v =>
             new Vertex(
                 v.x + this.center.x,
