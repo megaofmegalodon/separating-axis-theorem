@@ -22,12 +22,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/megaofmegalodon/seperating-axis-theorem.git"
+        "url": "git+https://github.com/megaofmegalodon/separating-axis-theorem.git"
     },
     "bugs": {
-        "url": "https://github.com/megaofmegalodon/seperating-axis-theorem/issues"
+        "url": "https://github.com/megaofmegalodon/separating-axis-theorem/issues"
     },
-    "homepage": "https://github.com/megaofmegalodon/seperating-axis-theorem#readme",
+    "homepage": "https://github.com/megaofmegalodon/separating-axis-theorem#readme",
     "publishConfig": {
         "access": "public"
     },
