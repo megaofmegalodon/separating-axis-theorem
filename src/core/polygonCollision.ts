@@ -15,11 +15,13 @@ export default function polygonCollision(a: Polygon, b: Polygon) {
     const polygons = [a, b];
 
     for (const polygon of polygons) {
-        for (let i = 0; i < polygon.worldVertices.length; i++) {
-            let next = (i + 1) % polygon.worldVertices.length;
+        const worldVertices = polygon.worldVertices;
 
-            const currentVertex = polygon.worldVertices[i];
-            const nextVertex = polygon.worldVertices[next];
+        for (let i = 0, len = worldVertices.length; i < len; i++) {
+            let next = (i + 1) % len;
+
+            const currentVertex = worldVertices[i];
+            const nextVertex = worldVertices[next];
 
             const edgeVector = new Vector(nextVertex.x - currentVertex.x, nextVertex.y - currentVertex.y);
             const normalVector = new Vector(-edgeVector.y, edgeVector.x).normalize();

@@ -16,8 +16,10 @@ import closestVertex from "../sat/closestVertex";
  */
 
 export default function circlePolygonCollision(a: Polygon, b: Circle) {
-    for (let i = 0; i < a.worldVertices.length; i++) {
-        let next = (i + 1) % a.worldVertices.length;
+    const worldVertices = a.worldVertices;
+
+    for (let i = 0, len = worldVertices.length; i < len; i++) {
+        let next = (i + 1) % len;
 
         const currentVertex = a.worldVertices[i];
         const nextVertex = a.worldVertices[next];
